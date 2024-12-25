@@ -69,9 +69,9 @@ function display_set(value) {
 function calculate() {
     if(stack.length != 2)
         return;
-    let b = display_get();
+    let b = +display_get();
     let op = stack.pop();
-    let a = stack.pop();
+    let a = +stack.pop();
     let res;
     switch(op) {
         case "+":
